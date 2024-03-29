@@ -15,7 +15,7 @@ FROM node:16-alpine3.16 AS deps
 
 WORKDIR /app
 COPY package.json yarn.lock ./
-RUN yarn install --frozwn-lockfile
+RUN yarn install --frozen-lockfile
 
 # END DEPS IMAGE
 
